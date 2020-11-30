@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Pavel Batalov">
+    <meta name="description" content="Designing for Dyslexia guide">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="nofollow" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <!-- CSS StyleSheet-->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/6dc8d4dd29.js" crossorigin="anonymous"></script>
+    <title>Dyslexia Design Tips</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+      <a class="navbar-brand" href="#">Designing for Dyslexia</a>
+      <button class="navbar-toggler" hidden="true" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" hidden="true" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" hidden="true" href="#definition"><i hidden="true" class="far fa-question-circle"></i>What is Dyslexia?</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" hidden="true" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i hidden="true" class="fas fa-universal-access"></i>Inclusive Design
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#fonts"><i hidden="true" class="fas fa-keyboard"></i>Fonts</a>
+              <a class="dropdown-item" href="#layout"><i hidden="true" class="fas fa-align-left"></i>Layout</a>
+              <a class="dropdown-item" href="#visuals"><i hidden="true" class="fas fa-palette"></i>Visuals</a>
+              <a class="dropdown-item" href="#searching"><i hidden="true" class="far fa-compass"></i>Navigation</a>
+              <a class="dropdown-item" href="#tts"><i hidden="true" class="far fa-comment"></i>Text to Speech</a>
+              <a class="dropdown-item" href="#custom"><i hidden="true" class="fas fa-user-cog"></i>Personalization</a>
+              <a class="dropdown-item" href="#personas"><i hidden="true" class="far fa-user-circle"></i>Personas</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" hidden="true" href="#resources"><i hidden="true" class="far fa-bookmark"></i>Resources</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="definition">
+      <h2><i hidden="true" class="far fa-question-circle"></i> What is dyslexia?</h2>
+      <p>Dyslexia is a <e>learning disability</e>, not a visual disability</p>
+    </section>
+    <section id="design">
+      <h2><i hidden="true" class="fas fa-universal-access"></i> Inclusive Design</h2>
+      <p>Here are ways you can support people with dyslexia</p>
+      <div id="fonts">
+          <h3><i hidden="true" class="fas fa-keyboard"></i> Fonts</h3>
+        <p>Using sans-serif, monospaced, roman fonts can increase reading performance.</p>
+        <button type="button" class="button btn btn-outline-danger" onclick="changeFont(&quot;Times New Roman, times, serif&quot;)">Times New Roman</button>
+        <button type="button" class="button btn btn-outline-success" onclick="changeFont(&quot;Century Gothic, sans-serif&quot;)">Century Gothic</button>
+        <p>Use <e>bold for emphasis over italics</e>. Studies have shown they are easier for dyslexic people to read.</p>
+        <button type="button" class="button btn btn-outline-danger" onclick="changeStyle(&quot;italic&quot;)">Italic</button>
+        <button type="button" class="button btn btn-outline-success" onclick="changeWeight(&quot;bold&quot;)">Bold</button>
+      </div>
+      <div id="layout">
+        <h3><i hidden="true" class="fas fa-align-left"></i> Layout</h3>
+        <p>Don't center-align text. It can be difficult to find the start of lines when they aren't at the same place. Don&apos;t justify text either, since equal spacing between letters tends to be easier to read. Column widths should also be around 45 characters. Most adults prefer around 60, but the most common is 100.</p>
+          <button type="button" class="button btn btn-outline-danger" onclick="changeAlignment(&quot;80&quot;, &quot;center&quot;)">Center</button>
+          <button type="button" class="button btn btn-outline-success" onclick="changeAlignment(&quot;45&quot;, &quot;left&quot;)">Left</button>
+        <p>If you're not using a monospace font, you can increase the space between words while decreasing the space between letters, but most fonts already strike a good balance. Line spacing should be around 1.5. Most browsers default to 1.1 or 1.2, while Bootstrap defaults to 1.428. If lines are too close together, they become hard to read. If they are too far apart, they seem disconnected.</p>
+          <button type="button" class="button btn btn-outline-danger" onclick="changeLineSpacing(&quot;1.1&quot;, &quot;center&quot;)">1.1</button>
+          <button type="button" class="button btn btn-outline-success" onclick="changeLineSpacing(&quot;1.5&quot;, &quot;left&quot;)">1.5</button>
+      </div>
+      <div id="visuals">
+        <h3><i hidden="true" class="fas fa-palette"></i> Visuals</h3>
+        <p>Textured backgrounds can be distracting and make the text difficult to read. Keep it simple. Having extremely high contrast isn't great either. Changing the background to an off-white or a peachy color can go a long way. If you have to use a white background, change the text color to a dark grey.</p>
+          <button type="button" class="button btn btn-outline-danger" onclick="changeBG(&quot;white&quot;)">White</button>
+          <button type="button" class="button btn btn-outline-success" onclick="changeBG(&quot;#e8e3d3&quot;)">Light Gold</button>
+      </div>
+      <div id="searching">
+        <h3><i hidden="true" class="far fa-compass"></i> Navigation</h3>
+        <p>Pages should always include <e>navigation elements</e>, including a table of contents for larger documents. This is useful regardless of the user, but dyslexic people will save time if they only need to read navigation links instead of trawling the page for the content they're looking for</p>
+          <button type="button" class="button btn btn-bad btn-outline-danger" onclick="changeNavigation(false)">No Navigation</button>
+          <button type="button" class="button btn btn-good btn-outline-success" onclick="changeNavigation(true)">Navigation</button>
+        <p>Increasing the size of headers and indenting them can ease in navigation. Reinforcing text with <e>icons</e> can help dyslexic people filter through text to find the relevant sections</p>
+          <button type="button" class="button btn btn-bad btn-outline-danger" onclick="changeIndent(7, &quot;normal&quot;, true)">Normal Headers</button>
+          <button type="button" class="button btn btn-good btn-outline-success" onclick="changeIndent(1, &quot;bold&quot;, false)">Improved Headers</button>
+      </div>
+      <div id="tts">
+        <h3><i hidden="true" class="far fa-comment"></i> Text to Speech</h3>
+        <p>Including <e>text-to-speech</e> buttons can help dyslexic people by allowing them to listen to the text on your website</p>
+      </div>
+      <div id="custom">
+        <h3><i hidden="true" class="fas fa-user-cog"></i> Personalization</h3>
+        <p>All of the above tips are useful, but the single-best thing you as a website designer can do is allow users to choose for themselves the font, spacing, and color of text on their webpages. Most browsers already have "reading modes", or extensions that allow users to customize any website like <a href="https://chrome.google.com/webstore/detail/a%20-fontsize-changer-lite/ckihgechpahhpompcinglebkgcdgpkil?hl=en" target="_blank">this one</a>.</p>
+      </div>
+      <div id="personas">
+        <h3><i hidden="true" class="far fa-user-circle"></i> Personas</h3>
+        <p>When testing software, personas are used to test software before running tests with actual users. Personas are fake personalities created by the designers, so they can test out their software from a viewpoint that's not their own. Including one or multiple dyslexic personas can ensure that you are taking the needs of the dyslexic community into account when building websites</p>
+        <p>Some good examples of personas with disabilities can be found <a href="https://www.a11yportal.com/basics/essentials/personas.html" target="_blank">here</a>.</p>
+      </div>
+    </section>
+    <section id="resources">
+      <h2><i hidden="true" class="far fa-bookmark"></i> Resources</h2>
+      <p>If you're a designer in the Pacific Northwest, check out some of these resources!</p>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

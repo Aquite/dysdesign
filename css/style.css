@@ -1,0 +1,68 @@
+main * {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Times New Roman", times, serif;
+  scroll-margin-top: 4em;
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: black;
+}
+
+h2 {
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+
+h3 {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+p {
+  max-width: 80ch;
+  line-height: 1.1;
+}
+
+e {
+  font-style: italic;
+}
+
+.button {
+  margin-bottom: 1em;
+  width: 200px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  background-color: #4b2e83;
+}
+
+header h1 {
+  color: white;
+}
+
+#definition {
+  padding-top: 2em;
+}
+
+.fa, .fas, .far {
+  padding-right: 0.2rem;
+}
