@@ -36,6 +36,21 @@ function changeAlignment(newWidth, pos) {
     all[i].style.textAlign = pos;
   }
 
+  var all = document.getElementsByTagName("dl");
+  for (var i=0, max=all.length; i < max; i++) {
+    all[i].style.maxWidth = width * 10 + "px";
+  }
+
+  var all = document.getElementsByTagName("dt");
+  for (var i=0, max=all.length; i < max; i++) {
+    all[i].style.textAlign = pos;
+  }
+
+  var all = document.getElementsByTagName("dd");
+  for (var i=0, max=all.length; i < max; i++) {
+    all[i].style.textAlign = pos;
+  }
+
   var all = document.getElementsByTagName("h3");
   for (var i=0, max=all.length; i < max; i++) {
     all[i].style.maxWidth = width - indent + "ch";
