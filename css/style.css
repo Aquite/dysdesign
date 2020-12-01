@@ -41,7 +41,7 @@ e {
 
 .button {
   margin-bottom: 1em;
-  width: 170px;
+  width: 199px;
   text-align: center;
   background-color: #f0f0f0;
 }
@@ -66,3 +66,10 @@ header h1 {
 .fa, .fas, .far {
   padding-right: 0.2rem;
 }
+ a {
+   color: #4b2e83;
+ }
+
+ a:hover {
+   color: #85754D;
+ }

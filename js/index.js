@@ -38,7 +38,7 @@ function changeAlignment(newWidth, pos) {
 
   var all = document.getElementsByTagName("dl");
   for (var i=0, max=all.length; i < max; i++) {
-    all[i].style.maxWidth = width * 10 + "px";
+    all[i].style.maxWidth = width * 10.5 + "px";
   }
 
   var all = document.getElementsByTagName("dt");
