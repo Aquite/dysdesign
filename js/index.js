@@ -1,6 +1,26 @@
 var indent = 7;
 var width = 80;
-changeAlignment(80, "center");
+before();
+
+function before() {
+  changeFont("Times New Roman, times, serif");
+  changeStyle("italic");
+  changeAlignment(80, "center");
+  changeLineSpacing(1.1, "center");
+  changeBG("white");
+  changeNavigation(false);
+  changeIndent(7, "normal", true);
+}
+
+function after() {
+  changeFont("'Jost', sans-serif");
+  changeWeight("Bold");
+  changeAlignment(45, "left");
+  changeLineSpacing(1.5, "left");
+  changeBG("#e8e3d3");
+  changeNavigation(true);
+  changeIndent(1, "bold", false);
+}
 
 function changeFont(font) {
   var all = document.getElementsByTagName("*");

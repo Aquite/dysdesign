@@ -53,11 +53,13 @@
   <main>
     <section id="definition">
       <h2><i hidden="true" class="far fa-question-circle"></i> What is dyslexia?</h2>
-      <p>Dyslexia is a <e>learning disability</e>, not a visual disability</p>
+      <p>Dyslexia is a <e>learning disability</e>, not a visual disability, that hinders the ability to read words and letters. Dyslexia can come in many forms, with some people impacted more than others. Dyslexia can be viewed from both a neurobiological and social standpoint. Neurobiologically, when non-dyslexic readers learn to read, certain areas of their brain in many different lobes are used for different parts of reading, including but not limited to the “Brain’s Letterbox” in the fusiform gyrus and parts of Broca’s area in the frontal lobe. Learning to read transforms these areas and the paths that connect them to foster reading ability. For dyslexic people, some or all of these areas tend to be underdeveloped and learning to read does not strengthen the connections between them. When dyslexic people read, they tend to use other areas of the brain more frequently, leaving the areas necessary for reading somewhat underdeveloped. One dyslexic person might not have as much gray matter in their Letterbox, for example, which would hinder that person’s ability to visually decode text.  There are some lesson plans and programs that can help some Dyslexic people read, but they involve strengthening alternate pathways through the brain. Dyslexic people are not “dumber” or “smarter” than anyone else, since it is a learning disability and not an intellectual disability.</p>
+      <p>Socially, many myths surround Dyslexia, and many people are misinformed on the nature and forms Dyslexia can take, mainly due to misrepresentation in media and culture. Dyslexia is not a visual disability, but rather a learning one. Dyslexic people do not see words jumbled or backwards, the difficulty in reading lies in the phonological processing of the text they see. Dyslexia affects some people differently than it does others. Some people might live half their lives before receiving a diagnosis, while others may show signs at a very early age. The current state of education both now and in the past has reading plans and curriculum that are unable to accommodate those individuals with Dyslexia. Some Dyslexic people need more accommodations than others, varying from text-to-speech, keyboards with spellcheck, and audiobooks, but in a neurodiverse society, institutions should be framed to fit the needs of everyone, not just the dominant majority of individuals.</p>
+      <p>This website serves as a guide to designers, programmers, and others in the technology and information industry as a set of guidelines to assist in ensuring that technology remains accessible to people with dyslexia.</p>
     </section>
     <section id="design">
       <h2><i hidden="true" class="fas fa-universal-access"></i> Inclusive Design</h2>
-      <p>Here are ways you can support people with dyslexia.</p>
+      <p>Here are ways you can support people with dyslexia when building websites:</p>
       <div id="fonts">
           <h3><i hidden="true" class="fas fa-keyboard"></i> Fonts</h3>
         <p>Using sans-serif, monospaced, or roman fonts can increase reading performance. However, it's important to remember that dyslexia is a learning disability, not a visual one. Fonts can sometimes help, but the research is wild and varied. As a guideline, avoid serif fonts, and ensure that letters are distinct and easily readable. Fonts for dyslexia do exist, like <a href="https://www.dyslexiefont.com/en/typeface/" target="_blank">dyslexie</a>, but they often serve to perpetuate myths about dyslexia and frustrate children with dyslexia when a new font doesn't help them read. Applications do exist to let users <a href="https://chrome.google.com/webstore/detail/opendyslexic-font-for-chr/cdnapgfjopgaggbmfgbiinmmbdcglnam?hl=en" target="_blank">set their own website fonts</a>, so it's best to let users customize their fonts themselves.</p>
@@ -70,11 +72,11 @@
       <div id="layout">
         <h3><i hidden="true" class="fas fa-align-left"></i> Layout</h3>
         <p>Don't center-align text. It can be difficult to find the start of lines when they aren't at the same place. Don&apos;t justify text either, since equal spacing between letters tends to be easier to read. Column widths should also be around 45 characters. Most adults prefer around 60, but the most common is 100.</p>
-          <button type="button" class="button btn btn-outline-danger" onclick="changeAlignment(&quot;80&quot;, &quot;center&quot;)">Center, 80</button>
-          <button type="button" class="button btn btn-outline-success" onclick="changeAlignment(&quot;45&quot;, &quot;left&quot;)">Left, 45</button>
+          <button type="button" class="button btn btn-outline-danger" onclick="changeAlignment(80, &quot;center&quot;)">Center, 80</button>
+          <button type="button" class="button btn btn-outline-success" onclick="changeAlignment(45, &quot;left&quot;)">Left, 45</button>
         <p>If you're not using a monospace font, you can increase the space between words while decreasing the space between letters, but most fonts already strike a good balance. Line spacing should be around 1.5. Most browsers default to 1.1 or 1.2, while Bootstrap defaults to 1.428. If lines are too close together, they become hard to read. If they are too far apart, they seem disconnected.</p>
-          <button type="button" class="button btn btn-outline-danger" onclick="changeLineSpacing(&quot;1.1&quot;, &quot;center&quot;)">1.1</button>
-          <button type="button" class="button btn btn-outline-success" onclick="changeLineSpacing(&quot;1.5&quot;, &quot;left&quot;)">1.5</button>
+          <button type="button" class="button btn btn-outline-danger" onclick="changeLineSpacing(1.1, &quot;center&quot;)">1.1</button>
+          <button type="button" class="button btn btn-outline-success" onclick="changeLineSpacing(1.5, &quot;left&quot;)">1.5</button>
       </div>
       <div id="visuals">
         <h3><i hidden="true" class="fas fa-palette"></i> Visuals</h3>
@@ -93,7 +95,7 @@
       </div>
       <div id="tts">
         <h3><i hidden="true" class="far fa-comment"></i> Text to Speech</h3>
-        <p>Including <e>text-to-speech</e> buttons can help dyslexic people by allowing them to listen to the text on your website</p>
+        <p>Including <e>text-to-speech</e> buttons can help dyslexic people by allowing them to listen to the text on your website. Some applications like <a href="https://chrome.google.com/webstore/detail/text-to-speech/bkjmiikejlljjmcmennfomjofojigefe#:~:text=Text%20to%20speech%20%28TTS%29%20extension%20that%20reads%20articles,and%20aggregating%20top%20news%20from%20around%20the%20world." target="_blank">hewizo</a> allow users to play text on their website. Including skiplinks and alt tags on images can help people with HTML screen readers navigate content.</p>
       </div>
       <div id="custom">
         <h3><i hidden="true" class="fas fa-user-cog"></i> Personalization</h3>
@@ -117,13 +119,13 @@
           <dd class="col-sm-8 col-sm-offset-1">An organization that provides website audits and information from an accessibility standpoint. They perform free accessibility analyses of websites if given a url. They also include infomation on designing for dyslexia.</dd>
 
           <dt class="col-sm-3"><a href="https://fonts.google.com/?category=Sans+Serif,Monospace" target="_blank">Google Fonts</a></dt>
-          <dd class="col-sm-8 col-sm-offset-1">A collection of easy to use, free fonts to add to your webpage</dd>
+          <dd class="col-sm-8 col-sm-offset-1">A collection of easy to use, free fonts to add to your webpage. Fonts aren't super important compared to the rest of the advice here, but it can be useful to allow users to choose from a number of different fonts.</dd>
 
-          <dt class="col-sm-3"><a href="https://dub.washington.edu/index.html" target="_blank">Design. Use. Build. (DUB)</a></dt>
-          <dd class="col-sm-8 col-sm-offset-1">A collection of University of Washington faculty, students, reasearchers, and industry partners interested in Human Computer Interaction and Design</dd>
+          <dt class="col-sm-3"><a href="https://dub.washington.edu/index.html" target="_blank">Design. Use. Build.</a></dt>
+          <dd class="col-sm-8 col-sm-offset-1">A collection of University of Washington faculty, students, reasearchers, and industry partners interested in Human Computer Interaction and Design.</dd>
 
           <dt class="col-sm-3"><a href="https://www.washington.edu/accesscomputing/" target="_blank">Access Computing</a></dt>
-          <dd class="col-sm-8 col-sm-offset-1">An organization which helps students with disabilities pursue computing careers.</dd>
+          <dd class="col-sm-8 col-sm-offset-1">An organization which helps students with disabilities pursue computing careers. They also list information about the challenges people with dyslexia face in interacting with computers.</dd>
 
           <dt class="col-sm-3"><a href="https://ies.ed.gov/ncee/wwc/" target="_blank">What Works Clearinghouse</a></dt>
           <dd class="col-sm-8 col-sm-offset-1">A group that reviews and aggregates research on dyslexia intervention programs to determine 'what works' when educating.</dd>
