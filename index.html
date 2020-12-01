@@ -7,7 +7,7 @@
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="nofollow" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <!-- CSS StyleSheet-->
     <link rel="stylesheet" href="css/style.css" />
@@ -61,14 +61,14 @@
           <h3><i hidden="true" class="fas fa-keyboard"></i> Fonts</h3>
         <p>Using <e>sans-serif</e>, <e>monospaced</e>, or <e>roman</e> fonts can increase reading performance. However, it's important to remember that dyslexia is a learning disability, not a visual one. Fonts can sometimes help, but the research is wild and varied. As a guideline, avoid serif fonts, and ensure that letters are distinct and easily readable. Fonts for dyslexia do exist, like <a href="https://www.dyslexiefont.com/en/typeface/" target="_blank">dyslexie</a>, but they often serve to perpetuate myths about dyslexia and frustrate children with dyslexia when a new font doesn't help them read. Applications do exist to let users <a href="https://chrome.google.com/webstore/detail/opendyslexic-font-for-chr/cdnapgfjopgaggbmfgbiinmmbdcglnam?hl=en" target="_blank">set their own website fonts</a>, so it's best to let users customize their fonts themselves.</p>
         <button type="button" class="button btn btn-outline-danger" onclick="changeFont(&quot;Times New Roman, times, serif&quot;)">Serif</button>
-        <button type="button" class="button btn btn-outline-success" onclick="changeFont(&quot;Century Gothic, CenturyGothic, AppleGothic, sans-serif&quot;)">Sans Serif</button>
+        <button type="button" class="button btn btn-outline-success" onclick="changeFont(&quot;Century Gothic, CenturyGothic, AppleGothic, Mulish, sans-serif&quot;)">Sans Serif</button>
         <p>Use <e>bold for emphasis over italics</e>. Studies have shown they are easier for dyslexic people to read.</p>
         <button type="button" class="button btn btn-outline-danger" onclick="changeStyle(&quot;italic&quot;)">Italic</button>
         <button type="button" class="button btn btn-outline-success" onclick="changeWeight(&quot;bold&quot;)">Bold</button>
       </div>
       <div id="layout">
         <h3><i hidden="true" class="fas fa-align-left"></i> Layout</h3>
-        <p>Don't center-align text. It can be difficult to find the start of lines when they aren't at the same place. Don&apos;t justify text either, since equal spacing between letters tends to be easier to read. Column widths should also be around 45 characters. Most adults prefer around 60, but the most common is 100.</p>
+        <p>Don't center-align text, instead <e>left-align</e> it. Finding the start of lines can be difficult when they aren't at the same place. Don&apos;t justify text either, since equal spacing between letters tends to be easier to read. Column widths should also be around 45 characters. Most adults prefer around 60, but the most common is 100.</p>
           <button type="button" class="button btn btn-outline-danger" onclick="changeAlignment(80, &quot;center&quot;)">Center, 80</button>
           <button type="button" class="button btn btn-outline-success" onclick="changeAlignment(45, &quot;left&quot;)">Left, 45</button>
         <p>If you're not using a monospace font, you can increase the space between words while decreasing the space between letters, but most fonts already strike a good balance. Line spacing should be around 1.5. Most browsers default to 1.1 or 1.2, while Bootstrap defaults to 1.428. If lines are too close together, they become hard to read. If they are too far apart, they seem disconnected.</p>
@@ -77,7 +77,7 @@
       </div>
       <div id="visuals">
         <h3><i hidden="true" class="fas fa-palette"></i> Visuals</h3>
-        <p>Textured backgrounds can be distracting and make the text difficult to read. Keep it simple. Having extremely high contrast isn't great either. Changing the background to an off-white or a peachy color can go a long way. If you have to use a white background, change the text color to a dark grey.</p>
+        <p>Textured backgrounds can be distracting and make the text difficult to read. Keep it simple. Having extremely high contrast isn't great either. Changing the background to an <e>off-white</e> or a peachy color can go a long way. If you have to use a white background, change the text color to a dark grey.</p>
           <button type="button" class="button btn btn-outline-danger" onclick="changeBG(&quot;white&quot;)">White</button>
           <button type="button" class="button btn btn-outline-success" onclick="changeBG(&quot;#e8e3d3&quot;)">Light Gold</button>
       </div>

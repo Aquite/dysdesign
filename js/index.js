@@ -13,7 +13,7 @@ function before() {
 }
 
 function after() {
-  changeFont("'Jost', sans-serif");
+  changeFont("Century Gothic, CenturyGothic, AppleGothic, 'Mulish', sans-serif");
   changeWeight("Bold");
   changeAlignment(45, "left");
   changeLineSpacing(1.5, "left");
