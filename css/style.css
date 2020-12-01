@@ -30,7 +30,7 @@ h3 {
 
 .button {
   margin-bottom: 1em;
-  width: 190px;
+  width: 180px;
   background-color: #f0f0f0;
 }
 
@@ -39,7 +39,7 @@ nav {
 }
 
 #definition {
-  padding-top: 2em;
+  padding-top: 2.1em;
 }
 
 .fa, .fas, .far {
