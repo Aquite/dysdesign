@@ -2,6 +2,10 @@ var indent = 7;
 var width = 80;
 before();
 
+$('.will-collapse').on('click', function() {
+    $('.navbar-collapse').collapse('hide');
+});
+
 function before() {
   changeFont("Times New Roman, times, serif");
   changeStyle("italic");
@@ -71,13 +75,13 @@ function changeAlignment(newWidth, pos) {
     all[i].style.textAlign = pos;
   }
 
-  var all = document.getElementsByTagName("h3");
+  var all = document.getElementsByTagName("h2");
   for (var i=0, max=all.length; i < max; i++) {
     all[i].style.maxWidth = width - indent + "ch";
     all[i].style.textAlign = pos;
   }
 
-  var all = document.getElementsByTagName("h2");
+  var all = document.getElementsByTagName("h1");
   for (var i=0, max=all.length; i < max; i++) {
     all[i].style.maxWidth = width - indent * 7 + "ch";
     all[i].style.textAlign = pos;
@@ -110,13 +114,13 @@ function changeNavigation(toggle) {
 function changeIndent(num, weight, hidden) {
   indent = num;
 
-  var all = document.getElementsByTagName("h3");
+  var all = document.getElementsByTagName("h2");
   for (var i=0, max=all.length; i < max; i++) {
     all[i].style.maxWidth = width - indent + "ch";
     all[i].style.fontWeight =  weight;
   }
 
-  all = document.getElementsByTagName("h2");
+  all = document.getElementsByTagName("h1");
   for (var i=0, max=all.length; i < max; i++) {
     all[i].style.maxWidth = width - indent * 7 + "ch";
     all[i].style.fontWeight = weight;
